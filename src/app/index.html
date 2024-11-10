@@ -1,14 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Teste new single page</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Profissional - Caio César</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      background-color: #f4f4f4;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      margin: 10px;
+    }
+    .intro {
+      background-color: #e2f7e1;
+      text-align: center;
+    }
+    .skills, .gallery, .contact {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .skills ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .skills li {
+      padding: 5px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      max-width: 150px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact label, .contact input, .contact textarea {
+      margin-bottom: 10px;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-    
+
+<header>
+  <h1>Perfil Tech de Caio César</h1>
+  <p>Análise de Fraudes | Sistemas de Informação</p>
+</header>
+
+<nav>
+  <a href="#intro">Sobre Mim</a>
+  <a href="#skills">Habilidades</a>
+  <a href="#gallery">Galeria</a>
+  <a href="#contact">Contato</a>
+</nav>
+
+<section id="intro" class="intro">
+  <h2>Sobre Mim</h2>
+  <p>Olá, sou Caio César! Tenho experiência na área de análise de fraudes e estou em transição para a área de tecnologia, com foco em desenvolvimento de sistemas e algoritmos. Sou dedicado, com uma grande aptidão para aprender novos conceitos e resolver problemas complexos.</p>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Habilidades</h2>
+  <ul>
+    <li>Análise de Dados</li>
+    <li>Raciocínio Lógico</li>
+    <li>Programação em C e JavaScript</li>
+    <li>Algoritmos e Estruturas de Dados</li>
+    <li>SQL e Banco de Dados</li>
+  </ul>
+</section>
+
+<section id="gallery" class="gallery">
+  <h2>Galeria de Projetos</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <img src="projeto1.jpg" alt="Projeto 1">
+    <img src="projeto2.jpg" alt="Projeto 2">
+    <img src="projeto3.jpg" alt="Projeto 3">
+    <img src="projeto4.jpg" alt="Projeto 4">
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contato</h2>
+  <form action="https://formsubmit.co/seu-email" method="POST">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <button type="submit">Enviar Mensagem</button>
+  </form>
+</section>
+
 </body>
 </html>
